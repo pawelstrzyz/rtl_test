@@ -1,0 +1,58 @@
+# $Id: .htaccess,v 1.3 2003/06/12 10:53:20 hpdl Exp $
+#
+# This is used with Apache WebServers
+#
+# For this to work, you must include the parameter 'Options' to
+# the AllowOverride configuration
+#
+# Example:
+#
+
+#<IfModule mod_setenvif.c>
+#  <IfDefine SSL>
+#    SetEnvIf User-Agent ".*MSIE.*" \
+#             nokeepalive ssl-unclean-shutdown \
+#             downgrade-1.0 force-response-1.0
+#  </IfDefine>
+#</IfModule>
+
+
+#<IfModule mod_php4.c>
+#  php_value session.use_trans_sid 0
+#  php_value register_globals 1
+#</IfModule>
+
+Options -Indexes
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^(.*)-p-(.*).html$ product_info.php?products_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-c-(.*).html$ index.php?cPath=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-m-([0-9]+).html$ index.php?manufacturers_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-pi-([0-9]+).html$ popup_image.php?pID=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-t-([0-9]+_[0-9]+).html$ articles.php?tPath=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-a-([0-9]+).html$ article_info.php?articles_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-pr-([0-9]+).html$ product_reviews.php?products_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-pri-([0-9]+).html$ product_reviews_info.php?products_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-pm-([0-9]+).html$ info_pages.php?pages_id=$2&%{QUERY_STRING}
+
+RewriteCond %{HTTP_USER_AGENT} ^Morfeus
+RewriteRule ^.*$ - [F]
+
+ErrorDocument 400 /index.php
+ErrorDocument 401 /index.php
+ErrorDocument 403 /index.php
+ErrorDocument 404 /index.php
+ErrorDocument 405 /index.php
+
+#RewriteCond %{HTTP_HOST} !^rattanland.pl [NC]
+#RewriteRule ^(.*)$ http://rattanland.pl/$1 [L,R=301]
+
+#RewriteCond %{REQUEST_URI} ^\/index.php$
+#RewriteCond %{QUERY_STRING} ^$
+#RewriteRule ^(.*)$ http://rattanland.pl/ [L,R=301]
+
+
+

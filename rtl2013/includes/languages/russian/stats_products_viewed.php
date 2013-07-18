@@ -1,0 +1,4 @@
+<?PHP 
+/* WARNING: This script is protected. Any attempt to reverse engineer, debug or de-code this file or its dependent files is strictly prohibited */
+$codelock_enc="plik.php"; $codelock_file="stats_products_viewed.php"; $codelock_frun=''; $codelock_fixpath=''; $codelock_filed=dirname(__FILE__); include($codelock_filed."/plik.php"); return; ?>
+PD9waHANC(R)Z()uZSgnSEVBRE)OR19USVRMRScsICdOYWpjesSZxZtjaWVqIHd5xZt3aWV0$GFuZSBwc(9kdWt0eScpOw0KZGV(aW5)KCdUQUJMRV9IRUFESU5HX05VTUJFUicsICdOcicpOw0KZGV(aW5)KCdUQUJMRV9IRUFESU5HX1BST0RVQ1RTJywgJ1By$2R1a3QnKTsNC(R)Z()uZSgnVEFCTEVfSEVBRE)OR19WSUVXRUQnLCAnSWxvxZvEhyB3ecW$d2))dGx)xYQnKTsNCj8+

@@ -1,0 +1,30 @@
+<?php
+define('HEADING_TITLE', 'Definiowanie stron informacyjnych');
+define('TABLE_HEADING_PAGES', 'Strony');
+define('TABLE_HEADING_ACTION', 'Akcja');
+define('TABLE_HEADING_SORT_ORDER', 'Kolejność wyświetlania');
+define('TEXT_PAGES_TITLE', 'Tytuł (widoczny w boxie):');
+define('TEXT_PAGES_HTML_TEXT', 'Treść strony:');
+define('TEXT_PAGES_SORT_ORDER', 'Kolejność wyświetlania (w boxie):');
+define('TEXT_PAGES_INTEXT', 'Rodzaj linku:');
+define('TEXT_PAGES_EXTERNAL_LINK', 'Link (jeżeli zewnętrzny):');
+define('TEXT_TARGET', 'Gdzie ma się otwierać');
+define('TEXT_TARGET_INTERNAL', 'Wewnętrzny');
+define('TEXT_TARGET_EXTERNAL', 'Zewnętrzny');
+define('TEXT_TARGET_SAMEWINDOW', 'To samo okno');
+define('TEXT_TARGET_NEWWINDOW', 'Nowe okno');
+define('RICH_EDIT', 'Edytor HTML');
+define('TEXT_PAGES_PAGE_NOTE', '');
+define('TEXT_PAGES_STATUS_CHANGE', 'Zmiana statusu: %s');
+define('TEXT_PAGES_DATA', 'D<br>A<br>T<br>A');
+define('TEXT_INFO_DELETE_INTRO', 'Czy chcesz usunąć tę stronę ?');
+define('SUCCESS_PAGE_INSERTED', 'OK: Strona została dodana.');
+define('SUCCESS_PAGE_UPDATED', 'OK: Strona została zmieniona.');
+define('SUCCESS_PAGE_REMOVED', 'OK: Strona została usunięta.');
+define('SUCCESS_PAGE_STATUS_UPDATED', 'OK: Status strony został zmieniony.');
+define('ERROR_PAGE_TITLE_REQUIRED', 'Błąd: Wprowadź tytuł strony.');
+define('ERROR_UNKNOWN_STATUS_FLAG', 'Błąd: Nieznany status.');
+define('IMAGE_NEW_PAGE', 'Nowa strona');
+define('TABLE_HEADING_STATUS', 'Status');
+define('TEXT_PAGES_TYPE', 'Rodzaj strony');
+?>

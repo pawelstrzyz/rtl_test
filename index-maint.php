@@ -1,0 +1,1 @@
+<?php echo 'Sklep jest wylaczony z powodow administracyjnych.  Zapraszamy wkrotce !' ?>

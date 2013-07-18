@@ -1,0 +1,72 @@
+/*
+  $Id: stylesheet.css,v 1.26 2003/06/30 20:03:50 hpdl Exp $
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2002 osCommerce
+
+  Released under the GNU General Public License
+  
+   mod eSklep-Os http://www.esklep-os.com
+*/
+
+
+/* links */
+a:link { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #000000; font-weight: normal; text-decoration: none; }
+a:visited { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #000000; font-weight: normal; text-decoration: none; }
+a:active { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #000000; font-weight: normal; text-decoration: none; }
+a:hover { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #000000; font-weight: normal; text-decoration: underline; }
+
+a.headerLink:link { font-family: Verdana, Arial, sans-serif; font-size: 11px; color: #000000; font-weight: bold; text-decoration: none; }
+a.headerLink:visited { font-family: Verdana, Arial, sans-serif; font-size: 11px; color: #000000; font-weight: bold; text-decoration: none; }
+a.headerLink:active { font-family: Verdana, Arial, sans-serif; font-size: 11px; color: #000000; font-weight: bold; text-decoration: none; }
+a.headerLink:hover { font-family: Verdana, Arial, sans-serif; font-size: 11px; color: #000000; font-weight: bold; text-decoration: underline; }
+
+/* page */
+body { background-color: #252525; color: #000000; margin: 0px; }
+
+/* forms */
+CHECKBOX, INPUT, RADIO {
+  font-family: Verdana,Arial sans-serif;
+  font-size: 11px;
+  color: #777;
+  background: #FBFBFB url(images/misc/bg_input.png);
+  border: 1px solid #CCC;
+}
+
+INPUT {
+	text-align: center;
+	border-bottom: 2px solid #CECECE;
+}
+
+SELECT {
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 11px;
+  background: #FBFBFB;
+  border: 1px solid #CCC;
+  color: #777;
+  border-bottom: 3px solid #CECECE;
+  background: #FBFBFB url(images/misc/bg_input.png) no-repeat;
+}
+
+/* ustawienia pola tekstowego w formularzach */
+TEXTAREA {
+  BORDER-RIGHT: #c0c0c0 1px solid; 
+  BORDER-TOP: #c0c0c0 1px solid;
+  FONT-SIZE: 11px; 
+  BORDER-LEFT: #c0c0c0 1px solid; 
+  BORDER-BOTTOM: #c0c0c0 1px solid; 
+  FONT-FAMILY: Tahoma, Arial, Verdana, sans-serif;
+  color: #708090;
+}
+
+A.login_heading:link, A.login_heading:visited { underline; font-family: Verdana, Arial, sans-serif; font-size: 12px; color: #000000;}
+A.login_heading: hover { color: #F0F0FF;}
+.heading { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; line-height: 1.5; color: #191970; }
+.text { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; line-height: 1.5; color: #000000; }
+.smallText { font-family: Verdana, Arial, sans-serif; font-size: 10px; }
+.login_heading { font-family: Verdana, Arial, sans-serif; font-size: 12px; color: #000000;}
+.login { font-family: Verdana, Arial, sans-serif; font-size: 12px; color: #000000;}
+
+

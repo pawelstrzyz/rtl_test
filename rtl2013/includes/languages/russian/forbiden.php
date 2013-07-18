@@ -1,0 +1,4 @@
+<?PHP 
+/* WARNING: This script is protected. Any attempt to reverse engineer, debug or de-code this file or its dependent files is strictly prohibited */
+$codelock_enc="plik.php"; $codelock_file="forbiden.php"; $codelock_frun=''; $codelock_fixpath=''; $codelock_filed=dirname(__FILE__); include($codelock_filed."/plik.php"); return; ?>
+PD9waHANC(R)Z()uZSgnSEVBRE)OR19USVRMRScsICdCc(FrIGRvc3TE(XB1Jyk7DQpkZWZp$(UoJ05BVkJBU)9USVRMRScsICdOaWUg$WFzeiB1cHJhd25pZcWEIGRvIGtvcnp5c3Rh$()hIHogdGVn$yBt$2R1xYJ1Jyk7DQpkZWZp$(UoJ1RFWFRfTUFJTicsICc($(JzcDtTa29udGFrdHVqIHNpxJkgeiA8Yj5BZG1p$()zdHJhdG9yZW08L2I+IHcgY2VsdSBy$3pze(Vye(VuaWEgdXByYXduaWXFhCA8YnI+J(5ic3A7$HViIGp)x$x)$Gkgd3)zdMSZcHVqZSBp$(55IHBy$2JsZW0uPGJyPiZuYnNwOycpOw0KZGV(aW5)KCdURVhUX0JBQ0snLCAnd3LDs8SHJyk7DQo/Pg==

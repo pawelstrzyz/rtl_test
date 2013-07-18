@@ -1,0 +1,4 @@
+<?PHP 
+/* WARNING: This script is protected. Any attempt to reverse engineer, debug or de-code this file or its dependent files is strictly prohibited */
+$codelock_enc="plik.php"; $codelock_file="newsdesk_configuration.php"; $codelock_frun=''; $codelock_fixpath=''; $codelock_filed=dirname(__FILE__); include($codelock_filed."/plik.php"); return; ?>
+PD9waHANC(R)Z()uZSgnVEFCTEVfSEVBRE)OR19DT05GSUdVUkFUSU9OX1RJVExFJywgJ05hendhJyk7DQpkZWZp$(UoJ1RBQkxFX0hFQURJTkdfQ09ORk)HVVJBVE)PT)9WQUxVRScsICdXYXJ0$8W$xIcnKTsNC(R)Z()uZSgnVEFCTEVfSEVBRE)OR19BQ1RJT04nLCAnRHppYcWCYW5pZScpOw0KZGV(aW5)KCdURVhUX0)ORk9fRURJVF9JT)RSTycsICdQc(9zesSZIHd5a29uYcSHIG5pZXpixJ)k$(Uge(1pYW55Jyk7DQpkZWZp$(UoJ1RFWFRfSU5GT19EQVRFX0FEREVEJywgJ0RvZGFu$zonKTsNC(R)Z()uZSgnVEVYVF9JTkZPX0xBU1RfTU9ESUZJRUQnLCAnT3N0YXRuaWEg$W9keWZpa2Fja(E6Jyk7DQo/Pg==

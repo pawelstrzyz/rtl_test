@@ -1,0 +1,34 @@
+<?php
+define('HEADING_TITLE', 'Administracja archiwami bazy danych');
+define('TABLE_HEADING_TITLE', 'Nazwa');
+define('TABLE_HEADING_FILE_DATE', 'Data');
+define('TABLE_HEADING_FILE_SIZE', 'Rozmiar');
+define('TABLE_HEADING_ACTION', 'Działanie');
+define('TEXT_INFO_HEADING_NEW_BACKUP', 'Nowe Archiwum');
+define('TEXT_INFO_HEADING_RESTORE_LOCAL', 'Przywracanie Danych');
+define('TEXT_INFO_NEW_BACKUP', 'Nie przerywaj procesu archiwizacji - może potrwać kilka minut.');
+define('TEXT_INFO_UNPACK', '<br><br>(po rozpakowaniu pliku z archiwum)');
+define('TEXT_INFO_RESTORE', 'Nie przerywaj procesu przywracania.<br><br>Im większe archiwum tym więcej czasu zajmie ten proces!<br><br>Jeżeli to możliwe użyj klienta mysql.<br><br>Na przykład:<br><br><b>mysql -h' . DB_SERVER . ' -u' . DB_SERVER_USERNAME . ' -p ' . DB_DATABASE . ' < %s </b> %s');
+define('TEXT_INFO_RESTORE_LOCAL', 'Nie przerywaj procesu przywracania.<br><br>Im większe archiwum tym więcej czasu zajmie ten proces!');
+define('TEXT_INFO_RESTORE_LOCAL_RAW_FILE', 'Wczytany plik musi mieć format sql (tekstowy).');
+define('TEXT_INFO_DATE', 'Data:');
+define('TEXT_INFO_SIZE', 'Rozmiar:');
+define('TEXT_INFO_COMPRESSION', 'Kompresja:');
+define('TEXT_INFO_USE_GZIP', 'Użyj GZIP');
+define('TEXT_INFO_USE_ZIP', 'Użyj ZIP');
+define('TEXT_INFO_USE_NO_COMPRESSION', 'Bez kompresji (czysty SQL)');
+define('TEXT_INFO_DOWNLOAD_ONLY', 'Tylko ściągnanie pliku (nie przechowuj go na serwerze)');
+define('TEXT_INFO_BEST_THROUGH_HTTPS', 'Najlepiej z połączeniem HTTPS');
+define('TEXT_DELETE_INTRO', 'Czy na pewno chcesz usunąć to archiwum?');
+define('TEXT_NO_EXTENSION', 'Brak');
+define('TEXT_BACKUP_DIRECTORY', 'Katalog archiwum:');
+define('TEXT_LAST_RESTORATION', 'Ostatnie przywracanie:');
+define('TEXT_FORGET', '(<u>zapomnij</u>)');
+define('ERROR_BACKUP_DIRECTORY_DOES_NOT_EXIST', 'Błąd: Katalog archiwizacji nie istnieje. Ustaw go w pliku configure.php.');
+define('ERROR_BACKUP_DIRECTORY_NOT_WRITEABLE', 'Błąd: Nie można zapisywać do katalogu archiwizacji.');
+define('ERROR_DOWNLOAD_LINK_NOT_ACCEPTABLE', 'Błąd: Problem z linkiem do ściągnięcia pliku.');
+define('SUCCESS_LAST_RESTORE_CLEARED', 'Zakończono : Data ostatniego odtworzenia została usunięta.');
+define('SUCCESS_DATABASE_SAVED', 'Powiodło się: Baza została zachowana.');
+define('SUCCESS_DATABASE_RESTORED', 'Powiodło się: Baza została przywrócona.');
+define('SUCCESS_BACKUP_DELETED', 'Powiodło się: archiwum zostało usunięte.');
+?>

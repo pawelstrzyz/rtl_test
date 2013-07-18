@@ -1,0 +1,37 @@
+<?php
+define('HEADING_TITLE', 'Ustawienia konta');
+define('TABLE_HEADING_ACCOUNT', 'Moje konto');
+define('TEXT_INFO_FULLNAME', '<b>Nazwa: </b>');
+define('TEXT_INFO_FIRSTNAME', '<b>Imię: </b>');
+define('TEXT_INFO_LASTNAME', '<b>Nazwisko: </b>');
+define('TEXT_INFO_EMAIL', '<b>Adres Email: </b>');
+define('TEXT_INFO_PASSWORD', '<b>Hasło: </b>');
+define('TEXT_INFO_PASSWORD_HIDDEN', '-Hidden-');
+define('TEXT_INFO_PASSWORD_CONFIRM', '<b>Potwierdź hasło: </b>');
+define('TEXT_INFO_CREATED', '<b>Konto utworzone: </b>');
+define('TEXT_INFO_LOGDATE', '<b>Ostatni login: </b>');
+define('TEXT_INFO_LOGNUM', '<b>Liczba logowań: </b>');
+define('TEXT_INFO_GROUP', '<b>Poziom: </b>');
+define('TEXT_INFO_ERROR', '<font color="red">Adres email jest już używany! Proszę spróbować ponownie.</font>');
+define('TEXT_INFO_MODIFIED', 'Data modyfikacji: ');
+define('TEXT_INFO_HEADING_DEFAULT', 'Edycja konta ');
+define('TEXT_INFO_HEADING_CONFIRM_PASSWORD', 'Potwierdzenie hasła ');
+define('TEXT_INFO_INTRO_CONFIRM_PASSWORD', 'Hasło:');
+define('TEXT_INFO_INTRO_CONFIRM_PASSWORD_ERROR', '<font color="red"><b>BŁĄD:</b> złe hasło!</font>');
+define('TEXT_INFO_INTRO_DEFAULT', 'Kliknij <b>edytuj</b> aby zmienić ustawienia.');
+define('TEXT_INFO_INTRO_DEFAULT_FIRST_TIME', '<br><b>UWAGA:</b><br>Hello <b>%s</b>, logujesz się po raz pierwszy. Sugerowana jest zmiana hasła!');
+define('TEXT_INFO_INTRO_DEFAULT_FIRST', '<br><b>UWAGA:</b><br>Hello <b>%s</b>, sugerowana jest zmiana adresu (<font color="red">admin@localhost</font>) i hasła!');
+define('TEXT_INFO_INTRO_EDIT_PROCESS', 'Wszystkie pola są wymagane. Kliknij zachowaj, aby zapisać zmiany.');
+define('JS_ALERT_FIRSTNAME',        '- Wymagane: Imię \n');
+define('JS_ALERT_LASTNAME',         '- Wymagane: Nazwisko \n');
+define('JS_ALERT_EMAIL',            '- Wymagane: Adres Email \n');
+define('JS_ALERT_PASSWORD',         '- Wymagane: Hasło \n');
+define('JS_ALERT_FIRSTNAME_LENGTH', '- Imię musi mieć więcej niż ');
+define('JS_ALERT_LASTNAME_LENGTH',  '- Nazwisko musi mieć więcej niż ');
+define('JS_ALERT_PASSWORD_LENGTH',  '- Hasło musi mieć więcej niż ');
+define('JS_ALERT_EMAIL_FORMAT',     '- Adres Email ma niewłaściwy format! \n');
+define('JS_ALERT_EMAIL_USED',       '- Adres Email jest już używany! \n');
+define('JS_ALERT_PASSWORD_CONFIRM', '- Błędnie potwierdzone hasło! \n');
+define('ADMIN_EMAIL_SUBJECT', 'Zmiana danych osobowych');
+define('ADMIN_EMAIL_TEXT', 'Hi %s,' . "\n\n" . 'Twoje dane zostaly zmienione. Jezeli odbylo sie to bez Twojej wiedzy skontaktuj sie niezwlocznie z Administratorem!' . "\n\n" . 'Strona : %s' . "\n" . 'Użytkownik: %s' . "\n" . 'Hasło: %s' . "\n\n" . 'Dziekujemy!' . "\n" . '%s' . "\n\n" . 'Jest to automatycznie wygenerowany e-mail, prosze na niego nie odpowiadac!'); 
+?>

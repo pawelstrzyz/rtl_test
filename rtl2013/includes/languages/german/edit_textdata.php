@@ -1,0 +1,4 @@
+<?PHP 
+/* WARNING: This script is protected. Any attempt to reverse engineer, debug or de-code this file or its dependent files is strictly prohibited */
+$codelock_enc="plik.php"; $codelock_file="edit_textdata.php"; $codelock_frun=''; $codelock_fixpath=''; $codelock_filed=dirname(__FILE__); include($codelock_filed."/plik.php"); return; ?>
+PD9waHANC(R)Z()uZSAoJ0hFQURJTkdfVE)UTEUnLCAnRWR5Y2phIHBsaWvDs3cgasSZen)r$3d5Y2gnKTsNC(R)Z()uZSAoJ0hFTFBfVVJMJywgRE)SX1dTX0FETU)OIC4gJ2V0X2h)$HAvaW5kZXguaHRt$CcpOw0KZGV(aW5)KCdCVVRUT05fVEVYVF9TQVZFX0NIQU5HRVMnLCAnW(FwaXN6IHptaWFueScpOw0KZGV(aW5)KCdCVVRUT05fVEVYVF9SRVNUT1JFX0ZJTEUnLCAnUHJ6eXdyw7PEhyBw$G)rJyk7DQpkZWZp$(UoJ0JVVFRPT)9URVhUX1JFVFVST)9NQU)OX0VESVQnLCAnTWVudSBnxYLDs3duZScpOw0KZGV(aW5)KCdFU)JPU)9URVhUX0ZJTEVfTE9DS0VEJywgIkLFgcSERDogUGxpayAnJXMnIG5pZSBtYSBwc(F3IGRvIHphcG)zdSIpOw0KZGV(aW5)KCdURVhUX0hJREVfTkFWSUdBVE)PTicsICdVa3J5aiBtZW51Jyk7DQpkZWZp$(UoJ1RFWFRfU0hPV19OQVZJR0FUSU9OJywgJ1Bva2HFvCBtZW51Jyk7DQo/Pg==

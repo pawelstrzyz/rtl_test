@@ -1,0 +1,816 @@
+/*
+  $Id: stylesheet.css,v 1.56 2003/06/30 20:04:02 hpdl Exp $
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2003 osCommerce
+
+  Released under the GNU General Public License
+*/
+
+/* kolor tla strony, tekstu na stronie oraz rozmiaru marginesu */
+BODY {
+  background:#f6f8fe url('images/misc/tlo_sklepu.gif') ;
+  background-repeat: repeat-x;
+  color: #53537d;
+  margin: 0px;
+}
+
+/*ustawienie ramki*/
+.ramka_sklep {
+	border-top:1px solid #bfbfd1;
+	border-left:1px solid #bfbfd1;
+	border-right:1px solid #bfbfd1;
+}
+
+/* ustawienia czcionki we wszystkich boxach */
+.boxText { 
+ font-family: Verdana, Arial, sans-serif; 
+ font-size: 11px;
+}
+
+/* ustawienia tekstu bledow */
+.errorBox {
+  font-family : Verdana, Arial, sans-serif;
+  font-size : 10px;
+  font-weight: bold; color: #d54608;
+  background: #ffffff;
+}
+
+/* ustawienia tekstu informujacego o braku towaru na skladzie podczas realizacji zamowienia */
+.stockWarning {
+  font-family : Verdana, Arial, sans-serif; 
+  font-size : 10px;
+  color: #cc0033;
+}
+
+/* kolor paska powiadamienia o produktach po zakonczonych zakupach - checkout_success.php) */
+.productsNotifications {
+	font-family: Verdana, Arial, sans-serif;
+	background: #f2fff7;
+	font-size: 11px;
+}
+
+/* wyglad tekstu [edycja] przed ostatecznym zatwierdzeniem zamowienia */
+.orderEdit {
+  font-family : Verdana, Arial, sans-serif;
+  font-size : 10px;
+  color: #00008B;
+  text-decoration: underline;
+}
+
+/* ustawienie informacji w potwierdzeniu mBank */
+h1 {
+  margin-bottom: 20px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #708090;
+}
+
+/* ustawienia linkow */
+A {
+  color: #525252;
+  text-decoration: none;
+}
+
+A:hover {
+  color: #d54608;
+  text-decoration: none;
+}
+
+/* sposob wyswietlania formularzy */
+FORM {
+  display: inline;
+}
+
+/* kolor tla naglowka */
+TR.header {
+  background: #ffffff;
+}
+
+/* kolor paska nawigacyjnego nad naglowkiem */
+TR.headerNavigation {
+  background: #bbc3d3;
+}
+
+/* ustawienia paska nawigacyjnego : czcionka, rozmiar, t³o, obraz s³a, kolor tekstu */
+TD.headerNavigation {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  background-image: url('images/infobox/corner_menu.gif');
+  color: #53537d;
+}
+
+TD.headerPowitanie {
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+  font-size: 11px;
+  background: #FFFFFF;
+  border-top: 0px solid #c0c0c0;
+  color: #747474;
+  font-weight : normal;
+}
+
+/* kolor linkow w pasku nawigacyjnym */
+.headerNavigation, headerNavigationFeatured { 
+  color: #53537d; 
+  text-decoration: none;
+}
+
+/* kolor linkow w pasku nawigacyjnym po najechaniu myszka */
+.headerNavigation:hover {
+  color: #d54608;
+  text-decoration: none;
+}
+
+/* kolor linkow w pasku nawigacyjnym po najechaniu myszka */
+.headerNavigationFeatured:hover {
+  color: #d54608;
+  text-decoration: none;
+}
+
+/* kolor tla gdy w naglowku wystapi blad - pojawia sie na gorze naglowka */
+TR.headerError {
+  background: #d54608;
+}
+
+/* ustawienia naglowka w przypadku wystapienia bledu */
+TD.headerError {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight : bold;
+  text-align : center;
+  color: #ffffff;
+  background: #d54608;
+}
+
+/* kolor tla dla informacji  pokazywanych na samej gorze naglowka */
+TR.headerInfo {
+  background: #00ff00;
+}
+
+/* ustawienia dla informacji  pokazywanych na samej gorze naglowka */
+TD.headerInfo {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 11px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  background: #00ff00;
+}
+
+/* kolor tla dla boxow - w takim kolorze jest ich obramowanie */
+.infoBox {
+  background: #FFFFFF;
+
+}
+
+/* kolor tla dla boxow -index - w takim kolorze jest ich obramowanie */
+.infoBox_Box {
+  background: #FFFFFF;
+  border-left:1px solid #bfbfd1;
+  border-right:1px solid #bfbfd1;
+  border-bottom: 1px solid #bfbfd1;
+}
+
+/* ustawienia dla boxow */
+TD.infoBox, SPAN.infoBox {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+/* ustawienia dla boxow w modulach*/
+.infoBoxContents {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 11px;
+  background: #FFFFFF;
+}
+
+/* ustawienia dla boxow w modulach*/
+.infoBoxContents_Box {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 11px;
+  background: #FFFFFF;
+  border-left:1px solid #bfbfd1;
+  border-right:1px solid #bfbfd1;
+  border-bottom: 1px solid #bfbfd1;
+}
+
+/* ustawienia dla boxow w modulach*/
+.infoBoxContents_Box_Menu {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 11px;
+  background: #FFFFFF;
+  border-Top:1px solid #bfbfd1;
+  border-left:1px solid #bfbfd1;
+  border-right:1px solid #bfbfd1;
+  border-bottom: 1px solid #bfbfd1;
+}
+
+/* ustawienia dla boxow */
+.boxContents {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 11px;
+}
+
+/* wykorzystany w jednym miejscu podczas zamawiania */
+.infoBoxNotice {
+  background: #FF8E90;
+}
+
+/* wykorzystany w jednym miejscu podczas zamawiania */
+.infoBoxNoticeContents {
+  background: #FFE6E6;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+/* ustawienia naglowka boxow */
+TD.infoBoxHeading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: #53537d;
+  background-image: url('images/infobox/corner_center.gif');
+}
+
+/* ustawienia naroznikow boxow - rozwiazanie niestandartowe */
+TD.CornerBoxHeading {
+  background: #D3D3D3;
+  PADDING: 0px;
+}
+
+/* kolor tla wiersza - kolorowanie wierszy tabeli */
+TR.accountHistory-odd, TR.addressBook-odd, TR.alsoPurchased-odd, TR.payment-odd, TR.productListing-odd, TR.productReviews-odd, TR.upcomingProducts-odd, TR.shippingOptions-odd {
+  background: #f6f8fe;
+}
+
+/* kolor tla wiersza - kolor0wanie wierszy tabeli */
+TR.accountHistory-even, TR.addressBook-even, TR.alsoPurchased-even, TR.payment-even, TR.productListing-even, TR.productReviews-even, TR.upcomingProducts-even, TR.shippingOptions-even {
+  background: #FFFFFF;
+}
+
+/* ustawienia naglowka w liscie produktow */
+.productListing-heading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: #53537d;
+  background: #f6f8fe;
+}
+
+/* ustawienia tabeli listujacej produkty po wybraniu kategorii */
+TABLE.productListing {
+  border: 1px;
+  border-style: solid;
+  border-color: #bfbfd1;
+  border-collapse: collapse;
+}
+
+/* ustawienia dla listy wyswietlajacej produkty */
+TD.productListing-data {
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+  font-size: 11px;
+}
+
+/* kolor linkow w listach z odnosnikami do kolejnych stron */
+A.pageResults {
+  color: #708090;
+}
+
+/* kolor linkow w listach z odnosnikami do kolejnych stron po najechaniu myszka */
+A.pageResults:hover {
+  color: #999999;
+  background: #FFFFFF;
+}
+
+/*ustawienia dla glownych stron, np. opisy produktow */
+TD.main, P.main {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* ustawienia dla tytulow naglowkow */
+TD.PageHeading {
+  font-family: Verdana, Arial, sans-serif;
+  TEXT-TRANSFORM: uppercase; 
+  FONT-WEIGHT: bold; 
+  FONT-SIZE: 13px; 
+  COLOR: #53537d; 
+  PADDING-LEFT: 5px; 
+  PADDING-TOP: 0px; 
+  BACKGROUND: #f6f8fe;
+}
+
+
+
+/*ustawienia dla glownych stron, np. opisy produktow */
+TD.subTileModule, P.subTileModule {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  COLOR: #525252;
+  line-height: 1.5;
+  padding-top: 15px;
+}
+
+/* ustawienia naroznikow dla tytulow naglowkow */
+TD.CornerPageHeading {
+	BACKGROUND: #D3D3D3;
+	PADDING: 0px; 
+}
+
+/* wszedzie tam gdzie wystepuje maly tekst, np. data dodania produktu */
+TD.smallText, SPAN.smallText, P.smallText, .smallText {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+/* Tytul glownej kategorii w newsach */
+TD.accountCategory {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  color: #708090;
+}
+
+/* ustawienia opisow pol formularza przy zaawansowanym wyszukiwaniu */
+TD.fieldKey {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* ustawienia pol formularza przy zaawansowanym wyszukiwaniu */
+TD.fieldValue {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+/* naglowki tabel - wykorztywany tylko w Admin */
+TD.tableHeading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* ustawienia opisu produktu w koszyku w boxie koszyk */
+SPAN.newItemInCart {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+/* ustawienia tekstu w polach formularzy */
+CHECKBOX, INPUT, RADIO {
+  font-family: Verdana,Arial sans-serif;
+  font-size: 11px;
+  color: #777;
+  background: #FBFBFB url(images/misc/bg_input.png);
+  border: 1px solid #CCC;
+}
+
+INPUT {
+	text-align: center;
+	border-bottom: 2px solid #CECECE;
+}
+
+SELECT {
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 11px;
+  background: #FBFBFB;
+  border: 1px solid #CCC;
+  color: #777;
+  border-bottom: 3px solid #CECECE;
+  background: #FBFBFB url(images/misc/bg_input.png) no-repeat;
+}
+
+/* ustawienia pola tekstowego w formularzach */
+TEXTAREA {
+  BORDER-RIGHT: #c0c0c0 1px solid; 
+  BORDER-TOP: #c0c0c0 1px solid;
+  FONT-SIZE: 11px; 
+  BORDER-LEFT: #c0c0c0 1px solid; 
+  BORDER-BOTTOM: #c0c0c0 1px solid; 
+  FONT-FAMILY: Tahoma, Arial, Verdana, sans-serif;
+  color: #708090;
+}
+
+/* ustawienia informacje ze produkt jest niedostepny */
+SPAN.markProductOutOfStock {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 11px;
+  color: #c76170;
+  font-weight: bold;
+}
+
+/* ustwaienia promocyjnej ceny produktu */
+SPAN.productSpecialPrice {
+  font-family: Verdana, Arial, sans-serif;
+  color: #d54608;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+productSpecialPrice {
+  font-family: Verdana, Arial, sans-serif;
+  color: #ff0000;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ustawienia tekstu bledu */
+SPAN.errorText {
+  font-family: Verdana, Arial, sans-serif;
+  color: #ff0000;
+}
+
+
+.moduleRow { }
+/* kolor na jaki zmienia sie tlo po najechaniu myszka podczas np. wyboru sposobu platnosci */
+.moduleRowOver { background-color: #bfbfd1; }
+/* kolor na jaki zmienia sie tlko po wybraniu opcji */
+.moduleRowSelected { 
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: bold;
+  color: red;
+}
+
+/* ustawienia paska na dole podczas realizacji zamowienia, ktory pokazuje kolejne etapy realizacji - kroki nieaktywne*/
+.checkoutBarFrom, .checkoutBarTo { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #C0C0C0; }
+/* ustawienia paska na dole podczas realizacji zamowienia, ktory pokazuje kolejne etapy realizacji - kroki aktywne*/
+.checkoutBarCurrent { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #708090; }
+
+/* ustawienia bledow/sukcesow/ostrzezen podczas operacji usuwania/dodawania informacji*/
+.messageBox { font-family: Verdana, Arial, sans-serif; font-size: 10px; }
+.messageStackError, .messageStackWarning { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #000000; background-color: #bfbfd1; }
+.messageStackSuccess { font-family: Verdana, Arial, sans-serif; font-size: 10px; background-color: #99ff00; }
+
+/* ustawienia oznaczenia pol wymaganych w formularzach */
+.inputRequirement { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #ff0000; }
+
+/* ustawienie wyswietlania nazwy produktu w boxie Nasz Hit */
+.star-product-title {
+  font-family: Verdana, Arial, sans-serif;
+  text-align : center;
+  font-size: 15px;
+  font-weight: bold;
+  color: #53537d;
+}
+
+/* ustawienie wyswietlania opisu produktu w boxie Nasz Hit */
+.star-product {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  color: #53537d;
+}
+
+/* ustawienie wyswietlania ceny produktu w boxie Nasz Hit */
+.star-product-price{
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d54608;
+}
+
+/* Box Categories */
+/* ustawienia wiersza kategorii w boxie Categories */
+.CategoryRow {
+  PADDING-RIGHT: 0px; 
+  PADDING-LEFT: 0px; 
+  PADDING-BOTTOM: 5px; 
+  PADDING-TOP: 5px; 
+}
+
+/* ustawienia wyswietlania tekstu kategorii w boxie Categories */
+.CategoryText {
+  FONT-WEIGHT: normal; 
+  FONT-SIZE: 11px; 
+  COLOR: #525252; 
+  TEXT-DECORATION: none; 
+  FONT-FAMILY: Verdana, Arial, sans-serif;
+}
+
+
+/* ustawienia wyswietlania linkow w boxach po prawej i lewej stronie */
+.boxLink {
+  FONT-WEIGHT: normal; 
+  FONT-SIZE: 11px; 
+  COLOR: #53537d; 
+  TEXT-DECORATION: none
+}
+
+/* ustawienia wyswietlania linkow w boxach po prawej i lewej stronie */
+.boxLink:hover {
+  FONT-WEIGHT: normal; 
+  FONT-SIZE: 11px; 
+  COLOR: #d54608; 
+  TEXT-DECORATION: none
+}
+
+/* wyswietlanie ceny produktu w boxie nowe produkty */
+.ProductTile {
+  font-family: Verdana, Arial, sans-serif; 
+  FONT-WEIGHT: bold; 
+  FONT-SIZE: 12px; 
+  COLOR: #53537d; 
+  TEXT-DECORATION: none
+}
+
+/* wyswietlanie ceny produktu w boxie nowe produkty */
+.ProductTile:hover {
+  font-family: Verdana, Arial, sans-serif; 
+  FONT-WEIGHT: bold; 
+  FONT-SIZE: 12px; 
+  COLOR: #d54608; 
+  TEXT-DECORATION: none
+}
+
+
+/* wyswietlanie ceny produktu w boxie nowe produkty */
+.PriceProduct {
+  font-family: Verdana, Arial, sans-serif;
+  FONT-WEIGHT: bold; 
+  FONT-SIZE: 16px;
+  COLOR: #708090
+}
+
+.SmallPriceProduct {
+  font-family: Verdana, Arial, sans-serif; 
+  FONT-WEIGHT: bold; 
+  FONT-SIZE: 11px;
+  COLOR: #708090
+}
+
+/* ustawienia napisu cena" */
+.Cena {
+  font-family: Verdana, Arial, sans-serif; 
+  FONT-WEIGHT: bold; 
+  FONT-SIZE: 14px;
+  COLOR: #525252
+}
+
+/* wyswietlanie nazwy produktu na stronie opisu produktu */
+.ProductInfoTile {
+  font-family: Verdana, Arial, sans-serif; 
+  FONT-WEIGHT: bold; FONT-SIZE: 14px; 
+  COLOR: #53537d; 
+  TEXT-DECORATION: none; 
+  BACKGROUND: #FFFFFF
+}
+
+/* wyswietlanie ceny detalicznej producenta i oszczedzasz */
+.PriceRetailProduct {
+  font-family: Verdana, Arial, sans-serif; 
+  FONT-SIZE: 11px;
+  COLOR: #525252
+}
+
+/* ustawienie srodka tabelki nasz hit - na stronie glownej */
+.templateinfobox {
+  font-family: Tahoma, sans-serif;
+  font-size: 10px;
+  color: #525252;
+  background-color: #FFFFFF;
+}
+
+/* ustawienie napisu dodaj do koszyka w listingach produktow */
+.AddCart {
+  font-size: 11px;
+  font-weight: bold;
+  color: #FF6600;
+  text-decoration: none;
+}
+.AddCart:hover {
+  font-size: 11px;
+  font-weight: bold;
+  color: #FF6600;
+  text-decoration: none;
+}
+
+/* ustawienie napisu szczegoly w listingach produktow */
+.ProductDescripion:hover {
+  font-size: 11px;
+  font-weight: bold;
+  color: #d54608;
+  text-decoration: none;
+}
+
+/* tabela z obramowaniem */
+.TableFrame {
+  border: 1px;
+  border-style: solid;
+  border-color: #bfbfd1;
+}
+
+/* tlo komorki imitujacej przycisk */
+.Button {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* tlo komorki w karcie produktu z informacjami o producencie, dostepnosci ... */
+.ProductHead {
+  font-size: 11px;
+  font-weight: normal;
+  BACKGROUND: #f6f8fe;
+}
+
+/* ustawienia dla tytulow naglowkow oczekiwanych produktow*/
+TD.PageUpcoming {
+    font-family: Verdana, Arial, sans-serif;
+	BACKGROUND-POSITION: 0% 0%; 
+	TEXT-TRANSFORM: uppercase; 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 13px; 
+	COLOR: #525252; 
+	PADDING-LEFT: 5px; 
+	PADDING-TOP: 0px; 
+	BACKGROUND: #FFCC66
+}
+
+/* ustawienia naroznikow dla tytulow naglowkow  oczekiwanych produktow*/
+TD.CornerBoxUpcoming {
+	BACKGROUND-POSITION: 0% 0%;
+	BACKGROUND: #FFCC66;
+	PADDING: 0px; 
+}
+
+/* elementy wykorzystywane do przegladania dodatkowych obrazkow */
+#motioncontainer a img{ /*image border color*/
+border: 1px solid #FFFFFF;
+}
+#motioncontainer a:hover img{ /*image border hover color*/
+border: 1px solid #FFFFFF;
+}
+#motioncontainer a:hover{
+color: red; /* Dummy definition to overcome IE bug */
+}
+#statusdiv{
+position: absolute;
+padding: 2px;
+background-color: yellow;
+border: 1px solid gray;
+visibility: hidden;
+}
+
+/*ustawienia footer*/
+TR.footer {
+  background: #eeeeee;
+}
+
+/*ustawienia footer*/
+TD.footer {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 10px;
+  background-image: url('images/infobox/corner_center.gif');
+  color: #53537d;
+  font-weight: bold;
+  height: 25px;
+  border-bottom:1px solid #bfbfd1;
+}
+
+/* ustawienie komorki w boxie kategorii */
+.CategoryBox {
+  padding-top:0px;
+  padding-left:0px;
+  padding-bottom:4px;
+  font-weight: normal;
+}
+
+/* ustawienie komorki ze znacznikiem w kategoriach */
+.CateginfoBoxContents {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 12px;
+}
+
+/* ustawienie linku w kategoriach */
+A.CateginfoBoxLink {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  COLOR: #53537d; 
+
+}
+A.CateginfoBoxLink:hover {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  COLOR: #d54608; 
+}
+/*
+.t1 {
+  width: 3px; height: 3px;
+  background-image: url('images/foto/foto_top_left.gif'); background-repeat: no-repeat
+}
+
+.t2 {
+  height: 3px;
+  background-image: url('images/foto/foto_top.gif'); background-repeat: repeat-x
+}
+
+.t3 {
+  width: 3px; height: 3px;
+  background-image: url('images/foto/foto_top_right.gif'); background-repeat: no-repeat
+}
+
+.t4 {
+  width: 3px;
+  background-image: url('images/foto/foto_border_left.gif'); background-repeat: repeat-y
+}
+
+.t5 { 
+  background: #FFFFFF;
+}
+
+.t6 {
+  width: 3px;
+  background-image: url('images/foto/foto_border_right.gif'); background-repeat: repeat-y
+}
+
+.t7 {
+  width: 3px; height: 4px;
+  background-image: url('images/foto/foto_bot_left.gif'); background-repeat: no-repeat
+}
+
+.t8 {
+  height: 4px;
+  background-image: url('images/foto/foto_bottom.gif'); background-repeat: repeat-x
+}
+
+.t9 {
+  width: 3px; height: 4px;
+  background-image: url('images/foto/foto_bot_right.gif'); background-repeat: no-repeat
+}
+
+.tbox1 {
+  width: 3px; height: 3px;
+  background-image: url('images/foto/foto_top_left.gif'); background-repeat: no-repeat
+}
+
+.tbox2 {
+  height: 3px;
+  background-image: url('images/foto/foto_top.gif'); background-repeat: repeat-x
+}
+
+.tbox3 {
+  width: 3px; height: 3px;
+  background-image: url('images/foto/foto_top_right.gif'); background-repeat: no-repeat
+}
+
+.tbox4 {
+  width: 3px;
+  background-image: url('images/foto/foto_border_left.gif'); background-repeat: repeat-y
+}
+
+.tbox5 { 
+  background: #FFFFFF;
+}
+
+.tbox6 {
+  width: 3px;
+  background-image: url('images/foto/foto_border_right.gif'); background-repeat: repeat-y
+}
+
+.tbox7 {
+  width: 3px; height: 4px;
+  background-image: url('images/foto/foto_bot_left.gif'); background-repeat: no-repeat
+}
+
+.tbox8 {
+  height: 4px;
+  background-image: url('images/foto/foto_bottom.gif'); background-repeat: repeat-x
+}
+
+.tbox9 {
+  width: 3px; height: 4px;
+  background-image: url('images/foto/foto_bot_right.gif'); background-repeat: no-repeat
+}
+*/
+input.compare {text-align: left; border:none; padding:0; text-decoration:none; color:#525252; display:inline; background: #FFFFFF; font-family:Verdana, sans-serif; font-size:11px; width: 150px;}
+input.compare:hover, input.guzik:focus {color:#525252;}
+
+div.tab-page { width: 550px; font-family: Verdana, Arial, sans-serif;  font-size: 11px; font-weight: normal; }
+
+/* Przewijane towary - definicje do boxow przewijanych */
+
+#pscroller1 {
+	height: 190px;
+	border: 0px;
+	padding: 5px;
+}
+#pscroller2 {
+	height: 190px;
+	border: 0px;
+	padding: 5px;
+}
+#pscroller3 {
+	height: 190px;
+	border: 0px;
+	padding: 5px;
+}
+.someclass {
+  	font-family: sans-serif;
+  	font-size: 11px;
+  	line-height: 1.5;
+}
+
+

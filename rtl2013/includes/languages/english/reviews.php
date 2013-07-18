@@ -1,0 +1,31 @@
+<?php
+define('HEADING_TITLE', 'Recenzje');
+define('TABLE_HEADING_PRODUCTS', 'Produkt');
+define('TABLE_HEADING_RATING', 'Ocena');
+define('TABLE_HEADING_DATE_ADDED', 'Data dodania');
+define('TABLE_HEADING_ACTION', 'Działanie');
+define('ENTRY_PRODUCT', 'Produkt:');
+define('ENTRY_FROM', 'Autor:');
+define('ENTRY_DATE', 'Data:');
+define('ENTRY_REVIEW', 'Opinia:');
+define('ENTRY_REVIEW_TEXT', '<small><font color="#ff0000"><b>INFORMACJA:</b></font></small>&nbsp;Kod HTML nie jest rozpoznawany!&nbsp;');
+define('ENTRY_RATING', 'Ocena:');
+define('TEXT_INFO_DELETE_REVIEW_INTRO', 'Czy chcesz usunąć ten komentarz ?');
+define('TEXT_INFO_DATE_ADDED', 'Data dodania:');
+define('TEXT_INFO_LAST_MODIFIED', 'Ostatnia zmiana:');
+define('TEXT_INFO_IMAGE_NONEXISTENT', 'OBRAZEK NIE ISNTNIEJE');
+define('TEXT_INFO_REVIEW_AUTHOR', 'Autor:');
+define('TEXT_INFO_REVIEW_RATING', 'Ocena:');
+define('TEXT_INFO_REVIEW_READ', 'Przeczytano:');
+define('TEXT_INFO_REVIEW_SIZE', 'Rozmiar:');
+define('TEXT_INFO_PRODUCTS_AVERAGE_RATING', 'Średnia ocen:');
+define('TEXT_OF_5_STARS', '%s z 5 Gwiazdek!');
+define('TEXT_GOOD', '<small><font color="#ff0000"><b>DOBRY</b></font></small>');
+define('TEXT_BAD', '<small><font color="#ff0000"><b>ZŁY</b></font></small>');
+define('TEXT_INFO_HEADING_DELETE_REVIEW', 'Usuń recenzję');
+define('TEXT_APPROVED', 'Zatwierdź') ;
+define('TEXT_APPROVE', 'Zatwierdź') ;
+define('TEXT_DISAPPROVE', 'Anuluj') ;
+define('TEXT_YES', 'Tak') ;
+define('TEXT_NO', 'Nie') ;
+?>

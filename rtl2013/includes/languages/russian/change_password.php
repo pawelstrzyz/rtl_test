@@ -1,0 +1,4 @@
+<?PHP 
+/* WARNING: This script is protected. Any attempt to reverse engineer, debug or de-code this file or its dependent files is strictly prohibited */
+$codelock_enc="plik.php"; $codelock_file="change_password.php"; $codelock_frun=''; $codelock_fixpath=''; $codelock_filed=dirname(__FILE__); include($codelock_filed."/plik.php"); return; ?>
+PD9waHANC(R)Z()uZSgnSEVBRE)OR19USVRMRScsICda$W)h$(EgaGFzxYJhIHXFvH)0a293$()rYScpOw0KZGV(aW5)KCdTT1JUX0JZJywgJ1NvcnRvd2FuaWU6ICcpOw0KZGV(aW5)KCdTRUxFQ1RfQ1VTVE9NRVInLCAnV3)iw7NyIHXFvH)0a293$()rYTogJyk7DQpkZWZp$(UoJ0ZJU)NUX05BTUUnLCAnSW1pxJknKTsNC(R)Z()uZSgnTEFTVF9OQU1FJywgJ05hendpc2tvJyk7DQpkZWZp$(UoJ0VNQU)MJywgJ0VtYW)sJyk7DQpkZWZp$(UoJ05FV19QQVNTV09SRCcsICdO$3d)IGhhc8WC$zogJyk7DQpkZWZp$(UoJ0NIQU5HRV9QQVNTV09SRCcsICda$W)h$(EgaGFzxYJhJyk7DQpkZWZp$(UoJ1BBU1NXT1JEX1VQREFURUQnLCAnIGhhc8WC$yB6$3N0YcWC$yB6$W))$()v$(UhJyk7DQpkZWZp$(UoJ0NVU1RPTUVSX1BBU1NXT1JEJywgJycpOw0KPz4=

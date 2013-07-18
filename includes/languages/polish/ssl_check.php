@@ -1,0 +1,7 @@
+<?php
+define('NAVBAR_TITLE', 'Kontrola bezpieczeństwa');
+define('HEADING_TITLE', 'Kontrola bezpieczeństwa');
+define('TEXT_INFORMATION', 'Wykryto, że Twoja przeglądarka wygenerowała nowy identyfikator dla sesji SSL.<br><br>W celu zapewnienia pełnego bezpieczeństwa transakcji proszę się zalogować ponownie.<br><br>Niektóre przeglądarki, np. Konqueror 3.1 nie potrafią automatycznie wygenerować bezpiecznego identyfikatora dla sesji SSL, a takie jest wymaganie systemu. Naszym priorytetem jest najwyższe bezpieczeństwo transakcji dlatego wymagamy użycia przez Ciebie innej przeglądarki, np. <a href="http://www.microsoft.com/ie/" target="_blank">Microsoft Internet Explorer</a>, <a href="http://channels.netscape.com/ns/browsers/download_other.jsp" target="_blank">Netscape</a> lub <a href="http://www.mozilla.org/releases/" target="_blank">Mozilla</a>.<br><br>Przepraszamy za powstałe niedogodności.');
+define('BOX_INFORMATION_HEADING', 'Prywatnść i bezpieczeństwo');
+define('BOX_INFORMATION', 'Na każdej stronie zabezpieczonej przez mechanizm SSL dokonywane jest sprawdzenie sesji wygenerowanej przez przeglądarkę.<br><br>Ma to na celu zapewnienie, że to właśnie Ty przeglądasz te strony, a nie ktoś inny podszywający się pod Ciebie.');
+?>

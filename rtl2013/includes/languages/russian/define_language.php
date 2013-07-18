@@ -1,0 +1,4 @@
+<?PHP 
+/* WARNING: This script is protected. Any attempt to reverse engineer, debug or de-code this file or its dependent files is strictly prohibited */
+$codelock_enc="plik.php"; $codelock_file="define_language.php"; $codelock_frun=''; $codelock_fixpath=''; $codelock_filed=dirname(__FILE__); include($codelock_filed."/plik.php"); return; ?>
+PD9waHANC(R)Z()uZSgnSEVBRE)OR19USVRMRScsICdaZGV(aW5pdWogasSZen)rJyk7DQpkZWZp$(UoJ1RFWFRfRk)MRV9ET0VTX05PVF9FWE)TVCcsICdQ$G)rIG5pZSBpc3RuaWVqZS4nKTsNC(R)Z()uZSgnRVJST1JfRk)MRV9OT1RfV1JJVEVBQkxFJywgJ0LFgsSFZDogT())IG1vx$xuYSB6YXBpc2HEhyBk$yB0ZWdvIHBsaWt1LiBVc3RhdyB1cHJhd25pZW5pYSBk$GE6ICVzJyk7DQo/Pg==

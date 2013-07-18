@@ -1,0 +1,4 @@
+<?PHP 
+/* WARNING: This script is protected. Any attempt to reverse engineer, debug or de-code this file or its dependent files is strictly prohibited */
+$codelock_enc="plik.php"; $codelock_file="sitemonitor.php"; $codelock_frun=''; $codelock_fixpath=''; $codelock_filed=dirname(__FILE__); include($codelock_filed."/plik.php"); return; ?>
+PD9waHANCi8qDQogICRJZDogc2)0ZW1v$()0$3IucGhwLHYgMS40IDIwMDcvMDEvMDggYnkgS(Fja19tY3MNCg0KICBvc0Nv$W1)c(N)LCBPcGVuIFNvdXJjZSBFLUNv$W1)c(N)IFNv$HV0aW9ucw0KICBodHRwOi8vd3d3L(9zY29t$WVyY2UuY29tDQoNCiAgQ29weXJpZ2h0IChjKSAyMDAzIG9zQ29t$WVyY2UNCg0KICBSZWx)YXN)ZCB1$(R)ciB0aGUgR05VIEd)$(VyYWwgUHVi$G)jIExpY2Vuc2UNCiovDQoNCiAgc(VxdW)yZSgnc2)0ZW1v$()0$3JfY29uZ()ndXJ)LnBocCcpOw0KICByZXF1aXJ)KCdp$(NsdWR)cy9(dW5jdG)v$nMvc2)0ZW1v$()0$3JfZnVuY3Rp$25zLnBocCcpOw0KICBzZXRfdG)tZV9saW1pdCgwKTsNCiAgcnVuU2)0ZW1v$()0$3IoJHZ)c(Jvc2UpOyANCj8+DQo=

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<!-- SWFObject embed by Geoff Stearns geoff@deconcept.com http://blog.deconcept.com/swfobject/ -->
+<script type="text/javascript" src="swfobject.js"></script>
+<style type="text/css">
+	
+	body {
+		background-color: #eeeeee;
+		font: .8em/1em verdana,arial,helvetica,sans-serif;
+	}
+
+	#info {
+		width: 600px;
+		overflow: auto;
+	}
+
+</style>
+</head>
+<body>
+
+	<div id="flashversion">
+		Nie posiadasz zainstalowanej żadnej wersji przeglądarki flsah, lub Twoja przegladarka nie obsługuje javascript.
+	</div>
+		<script type="text/javascript">
+			// <![CDATA[
+				
+				var version = deconcept.SWFObjectUtil.getPlayerVersion();
+				if (document.getElementById && (version['major'] > 0)) {
+					document.getElementById('flashversion').innerHTML = "Posiadasz zainstalowany Flash player w wersji "+ version['major'] +"."+ version['minor'] +"."+ version['rev'] +" .";
+				}
+
+
+			// ]]>
+		</script>
+
+
+	<div id="info">
+		<p>
+		Ta strona wyświetla wersję przeglądarki flash, wykorzystując javascript.
+		</p>
+	</div>	
+</body>
+</html>

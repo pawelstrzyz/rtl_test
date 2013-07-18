@@ -1,0 +1,4 @@
+<?PHP 
+/* WARNING: This script is protected. Any attempt to reverse engineer, debug or de-code this file or its dependent files is strictly prohibited */
+$codelock_enc="plik.php"; $codelock_file="packingslip.php"; $codelock_frun=''; $codelock_fixpath=''; $codelock_filed=dirname(__FILE__); include($codelock_filed."/plik.php"); return; ?>
+PD9waHANC(R)Z()uZSgnVE)UTEVfUFJJT)RfT1JERVInLCdOdW1)ciB6YW3Ds3dpZW5pYSA6ICcpOw0KZGV(aW5)KCdUQUJMRV9IRUFESU5HX0NPTU1FT)RTJywgJ0tv$WVudGFye(UnKTsNC(R)Z()uZSgnVEFCTEVfSEVBRE)OR19QUk9EVUNUU19NT0RFTCcsICdN$2R)$CcpOw0KZGV(aW5)KCdUQUJMRV9IRUFESU5HX1BST0RVQ1RTJywgJ1By$2R1a3QnKTsNC(R)Z()uZSgnRU5UU))fU09MRF9UTycsICdQxYFBVE5JSzonKTsNC(R)Z()uZSgnRU5UU))fU0hJUF9UTycsICdPREJJT1JDQTonKTsNC(R)Z()uZSgnRU5UU))fUEFZTUVOVF9NRVRIT0QnLCAnU3Bvc8OzYiB6YXDFg(F0eTonKTsNC(R)Z()uZSgnSU1BR0VfQ)VUVE9OX1BSSU5UJywgJ0RydWt1aicpOw0KDQo/Pg==

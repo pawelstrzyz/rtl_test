@@ -1,0 +1,4 @@
+<?PHP 
+/* WARNING: This script is protected. Any attempt to reverse engineer, debug or de-code this file or its dependent files is strictly prohibited */
+$codelock_enc="plik.php"; $codelock_file="protection.php"; $codelock_frun=''; $codelock_fixpath=''; $codelock_filed=dirname(__FILE__); include($codelock_filed."/plik.php"); return; ?>
+PD9waHANC(R)Z()uZSgnSEVBRE)OR19USVRMRScsICdQ$G)raSBr$25(aWd1c(FjeWpuZScpOw0KZGV(aW5)KCdURVhUX0FETU)OJywgJ2Fk$W)uL2)uY2x1ZGVzL2Nv$(ZpZ3VyZS5waHAnKTsNC(R)Z()uZSgnVEVYVF9DQVRBTE9HJywgJ2)uY2x1ZGVzL2Nv$(ZpZ3VyZS5waHAnKTsNC(R)Z()uZSgnVEVYVF9QUk9URUNURUQnLCAnW(FiZXpwaWVje(9ueScpOw0KZGV(aW5)KCdURVhUX1VOUFJPVEVDVEVEJywgJ05pZSB6YWJ)enBpZWN6$255Jyk7DQpkZWZp$(UoJ1RFWFRfRkFJTEVEJywgJ05pZSBt$8W8$(Ege(1pZW5pxIcgcHJhdyBk$yB6YXBpc3UnKTsNC(R)Z()uZSgnVEVYVF9TVUNDRUVERUQnLCAnUHJhd2EgZG8ge(FwaXN1IHpvc3RhxYJ5IHVzdW5pxJ)0ZScpOw0KPz4=

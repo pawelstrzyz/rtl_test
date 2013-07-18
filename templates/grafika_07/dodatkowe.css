@@ -1,0 +1,250 @@
+/* menu Image -noborderBox2 - Show Sub-categories  Star */
+
+a.menucateg:link, a.menucateg:visited, a.menucateg:active {
+display: block;
+vertical-align: middle;
+color:#999999;
+font-size: 11px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-weight: bold;
+text-align: left;
+height: 19px;
+padding-top:2px;
+text-decoration: none;
+background-color: #EDEDEF;
+border: solid 1px #FFFFFF;
+}
+
+a.menucateg:hover {
+border: solid 1px #CCCCCC;
+background-image: url(images/misc/menuon.png);
+background-repeat: repeat;
+text-decoration: none;
+font-weight: bold;
+color: #000000;
+}
+
+a.menusubcateg:link, a.menusubcateg:visited, a.menusubcateg:active {
+display: block;
+vertical-align: middle;
+font-size: 11px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+text-align: left;
+height: 19px;
+text-decoration: none;
+padding-top:2px;
+border-bottom: 1px solid #7b9ebd;
+border: solid 1px #FFFFFF;
+}
+
+a.menusubcateg:hover {
+border-bottom: 1px solid #666666;
+border-top: 1px solid #666666;
+background-image: url(images/misc/menuon.png);
+background-repeat: repeat;
+text-decoration: none;
+color: #000000;
+}
+/* menu Image -noborderBox2 - Show Sub-categories  End */
+
+
+/* XC Menu Styles */
+#catxcdiv ul {
+	list-style: none;
+	margin: 0;
+	padding: .2em 0 0 2.2em;
+}
+
+/* menu item spacing */
+#catxcdiv li{ margin-bottom: .2em; }
+
+/*padding between submenu items*/
+#catxc ul li { padding: 0 0 .2em 0; }
+
+/*xc menu item*/
+#catxcdiv li.xc { list-style: none; }
+
+/*submenu*/
+#catxcdiv li.xc ul { margin: .3em 0 0 -.8em; }
+
+/* +/- control */
+div.xcx, div.xcc {
+	position: relative;
+	display: inline;
+}
+li.xc>div.xcx, li.xc>div.xcc {
+	position: static;
+	margin-left: -1.5em;
+	float: left;
+	width: 1.5em;
+}
+div.xcx a, div.xcc a {
+	position: absolute;
+	left: -2em;
+}
+div.xcx>a, div.xcc>a {
+	position: static;
+}
+div.xcx a:link, div.xcx a:visited,
+div.xcc a:link, div.xcc a:visited {
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 110%;
+}
+
+#menu1 dd.active {
+	font-weight: bold;
+}
+#menu2 dd.active {
+	font-weight: bold;
+}
+#menu3 dd.active {
+	font-weight: bold;
+}
+
+/* DynaMenu Styles */
+.horbar	{   /* Color of main horizontal menubar and border */
+	color: black;
+	background-color: #e6e7e6;
+	border: 0px outset #525252;
+}
+
+.horizitem	{          /* Behaviour of main horizontal menu items, leave as is for proper operation */
+	float: left;
+	white-space: nowrap;
+}
+
+.horizitem a {              /* Font style, size of submenu items */
+  font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;	
+	text-decoration: none;
+	position: relative;	
+	display: block;	
+}
+
+.horizitem a:link, .horizitem a:visited 	{      /* Font style & color of main menu items */
+	color: #000000;
+	text-decoration: none;
+}
+
+.horizitem a:hover	{       /* Font style & color, background menu color of main menu item when hovered over */
+	color: #ffffff;
+	background-color: #21459c;
+	text-decoration: none;
+}
+
+.horizitem a:active	{       /* Font style & color, background menu color of main menu item when clicked */
+	color: #ffff00;
+	background-color: #666666;	
+	text-decoration: none;
+}
+
+.horizsubmenu	{       /* Behaviour of sub-menu items - leave as is for proper operation of submenus */
+	position: absolute;
+	left: 0;
+	top: 10px;
+	visibility: hidden;
+}
+
+.horizsubframe	{      /* Color of submenu item and border */
+	background-color: #e6e7e6;
+	border: 1px outset #fdfefd;
+	
+	position: relative;
+	top: 6px;
+	display: block;	
+}
+
+.horizsubitem	{       /* Behaviour of sub-menu items - leave as is for proper operation of submenus */
+	text-align: left;
+	white-space: nowrap;
+}
+
+.horizsubitem a {            /* Font style, size of submenu items */
+  font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;	
+	text-decoration: none;
+	
+	position: relative;
+	display: block;	
+}
+
+.horizsubitem a:link, .horizsubitem a:visited	{       /* Font color, style of submenu items */
+	color: #000000;
+	font-size: 11px;	
+	text-decoration: none;
+}
+
+.horizsubitem a:hover	{      /* Font color, style, background submenu color of submenu item when hovered over */
+	color: #ffffff;
+	background-color: #21459c;
+	text-decoration: none;
+}
+
+.horizsubitem a:active	{      /* Font color, style, background submenu color of submenu item when clicked */
+	color: #ffff00;
+	background-color: #666666;		
+	text-decoration: none;
+}
+
+.horizsubitem .horizfwdarr, .horizitem .horizfwdarr	{      /* Positioning of right arrow for submenus */
+	position: absolute;
+	top: 5px;
+	right: 8px;
+}
+
+.dmselected {   /* Style override for selected category tree */
+    background-color: #ccc;
+		font-weight: bold;
+}
+
+.horbar .dmselected {   /* Style override for selected root category */
+    background-color: #999;
+}
+
+
+/*---------------------------*/
+/* Tree and Plain Menu Style */
+/*---------------------------*/
+
+.treemenudiv	{     /* Behaviour of tree/plain menu item - leave as is for proper performance */
+	display: block;
+	white-space: nowrap;
+}
+
+
+.phplmbodytable { /* Class of table cells containing plain menus */
+
+}
+
+.phplmnormal {     /* Font size & color of unlinked menu items */
+	color: #000000;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+
+a.phplm:link, a.phplm:visited	{      /* Font color, style of linked & visited menu items */
+	color: #003300;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+
+a.phplm:hover	{      /* Font color, style of menu items when hovered over */
+	color: #841212;
+	background-color: #ccc;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+a.phplm:active	{      /* Font size & color of menu items when clicked */
+	color: #ff0000;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+.dmselected {   /* Style overide for selected category tree */
+    background-color: #ccc;
+		font-weight: bold;
+}

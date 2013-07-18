@@ -1,0 +1,191 @@
+<?php
+$szerokosc = SMALL_IMAGE_WIDTH+10;
+$wysokosc = SMALL_IMAGE_HEIGHT+10;
+
+$row = 0;
+$col = 1;
+$nr_div = 1;
+$info_box_contents = array();
+
+while ($new_products = tep_db_fetch_array($new_products_query)) {
+    $new_products['products_name'] = tep_get_products_name($new_products['products_id']);
+    $new_products['products_name'] = osc_trunc_string($new_products['products_name'], 50, 1);
+
+	if ($new_products['products_quantity']  > 0) {
+		if ($new_products['products_price'] > 0) {
+			$przcisk_kup = '<form name="buy_now_' . $new_products['products_id'] . '" method="post" action="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('action')) . 'action=buy_now', 'NONSSL') . '"><input type="hidden" name="products_id" value="' . $new_products['products_id'] . '"><input type="hidden" name="quantity" value="1">' . tep_image_submit('button_buy_now.gif', IMAGE_BUTTON_IN_CART . ' ' . $new_products['products_name']) . '</form>';
+		} else {
+			$przcisk_kup = '';
+		}
+	} else {
+		if ( (STOCK_CHECK == 'true') && (STOCK_ALLOW_CHECKOUT != 'true') ) {
+			$przcisk_kup = ' '.tep_image_button('button_sold.gif').'';
+		} else {
+			$przcisk_kup = '<form name="buy_now_' . $new_products['products_id'] . '" method="post" action="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('action')) . 'action=buy_now', 'NONSSL') . '"><input type="hidden" name="products_id" value="' . $new_products['products_id'] . '"><input type="hidden" name="quantity" value="1">' . tep_image_submit('button_buy_now.gif', IMAGE_BUTTON_IN_CART . ' ' . $new_products['products_name']) . '</form>';
+		}
+	}
+	
+    if (DISPLAY_PRICE_BRUTTO_NETTO == 'true') {
+ 	    $display_nb = 1;
+ 	  } else {
+	    $display_nb = 0;
+    }		
+
+    //TotalB2B start
+    if ($new_price = tep_get_products_special_price($new_products['products_id']) ) {
+        $new_products_org['products_price'] = tep_xppp_getproductprice($new_products['products_id']);
+        $new_products['products_price'] = $new_price;
+
+        if ($new_products['products_price'] > 0) {
+            if ($special_hide == 'false') {
+               $query_price_to_guest_result = ALLOW_GUEST_TO_SEE_PRICES;
+               if ((($query_price_to_guest_result=='true') && !(tep_session_is_registered('customer_id'))) || ((tep_session_is_registered('customer_id')))) {
+                  $cena_produktu = '<span class="smallText">'. TABLE_HEADING_PRICE . ':</span>&nbsp;<span class="smallText"><s>' . $currencies->display_price($new_products['products_id'], $new_products_org['products_price'], tep_get_tax_rate($new_products['products_tax_class_id'])) . '</s></span><br><span class="productSpecialPrice">' . $currencies->display_price_nodiscount($new_products['products_price'],tep_get_tax_rate($new_products['products_tax_class_id']),1,$display_nb) .'</span>';
+               } else {
+                  $cena_produktu = '<span class="smallText">'. TABLE_HEADING_PRICE . ':</span><br><span class="Cena">' . PRICES_LOGGED_IN_TEXT . '</span>';
+               }
+           } else {
+                $cena_produktu = '<span class="Cena">' . $currencies->display_price($new_products['products_id'], $new_products_org['products_price'], tep_get_tax_rate($new_products['products_tax_class_id']),1,$display_nb) .'</span>';
+            }
+        } else {
+             $cena_produktu = '<span class="smallText"><b>'.TEMPORARY_NO_PRICE.'</b></span>';
+        }
+    } else {
+        $new_products['products_price'] = tep_xppp_getproductprice($new_products['products_id']);
+        if ($new_products['products_price'] > 0) {
+            $cena_produktu = '<span class="smallText">'. TABLE_HEADING_PRICE . ':<br></span><span class="Cena">' . $currencies->display_price($new_products['products_id'],$new_products['products_price'],tep_get_tax_rate($new_products['products_tax_class_id']),1,$display_nb).'</span>';
+        } else {
+            $cena_produktu = '<span class="smallText"><b>'.TEMPORARY_NO_PRICE.'</b></span>';
+        }
+    }
+    //TotalB2B end & TotalB2B end
+
+    echo '
+    <td width="'.$szer_tab.'%" align="center" valign="top">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="TableFrame">
+     <tr>
+      <td>
+       <table width="100%" border="0" cellspacing="0" cellpadding="2">
+        <tr>
+         <td align="center" valign="top" height="35">
+          <a class="ProductTile" href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $new_products['products_id']) . '">' . $new_products['products_name'] . '</a>
+         </td>
+        </tr>
+        <tr>
+         <td align="center" valign="middle">
+          <table border="0" cellspacing="0" cellpadding="0">
+           <tr>
+           <td align="center" valign="top">';
+	       	if ($new_products['products_image'] != '') {
+	            echo '<table class="dia" cellpadding="0" cellspacing="0" width="'.$szerokosc.'" height="'.$wysokosc.'"><tr><td>';
+				
+				$wer = Array();		//tworzy pusta tablice do ktorej beda wstawiane obrazki
+				// pierwszy obrazek
+				$wer[0] = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $new_products['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $new_products['products_image'], $new_products['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
+			   
+			    // tworzy tablice z dodatkowymi obrazkami
+			   	$new_foto_query = mysql_query("select popup_images from additional_images where products_id = " . $new_products['products_id']);
+				$rem = 0;
+			    while ($new_foto = mysql_fetch_assoc($new_foto_query)) {
+				    $rem++;				
+					$wer[$rem] = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $new_products['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $new_foto['popup_images'], $new_products['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
+		        }
+			    if ($rem > 1) {
+				    ?>
+					    <script type="text/javascript">
+						var delay<?php echo $nr_div; ?>=2000;	
+						<?php
+						$wielkosc_tablicy = count($wer);
+						echo 'var pics'.$nr_div.'= new Array('. $wielkosc_tablicy . ');';
+						for($ind=0;$ind<$wielkosc_tablicy;$ind++) {
+							echo 'pics'.$nr_div.'['.$ind.']=\''.$wer[$ind].'\';';
+						}
+						?>	 
+						var numpics<?php echo $nr_div; ?>=pics<?php echo $nr_div; ?>.length;
+						var thenum<?php echo $nr_div; ?>=0;
+
+						function change<?php echo $nr_div; ?>_it() {
+							  document.getElementById('obrazek<?php echo $nr_div; ?>').innerHTML = pics<?php echo $nr_div; ?>[thenum<?php echo $nr_div; ?>];
+						      setTimeout('change<?php echo $nr_div; ?>_it2()',delay<?php echo $nr_div; ?>);  
+						 }
+
+						function change<?php echo $nr_div; ?>_it2()
+						 {
+						   var x<?php echo $nr_div; ?>=0;
+						   thenum<?php echo $nr_div; ?>+=1;
+
+						   if (thenum<?php echo $nr_div; ?>>numpics<?php echo $nr_div; ?>-1)
+							 thenum<?php echo $nr_div; ?>=0;
+							 
+						   document.getElementById('obrazek<?php echo $nr_div; ?>').innerHTML = pics<?php echo $nr_div; ?>[thenum<?php echo $nr_div; ?>];
+						   x<?php echo $nr_div; ?>+=1;
+						   setTimeout('change<?php echo $nr_div; ?>_it2()',delay<?php echo $nr_div; ?>);
+						 }
+						</script>
+
+						<div id='obrazek<?php echo $nr_div; ?>'>
+						</div>
+						<script type="text/javascript">
+						  change<?php echo $nr_div; ?>_it();
+						</script>	
+					<?php
+					} else {
+						echo $wer[0];
+					}
+				?>
+
+				<?php
+				$nr_div++
+				?>		   
+			   
+			   <?php
+
+	           echo '</td></tr></table>';
+	       } else {
+		     echo '';
+		   }
+           echo '</td></tr><tr><td  align="center" valign="middle" height="38">'.$cena_produktu .'</td>
+           </tr>
+          </table>
+         </td>
+        </tr>
+        <tr>
+         <td align="center">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+            <td align="center" width="100%" height="28" class="Button"><a class="ProductDescripion" href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $new_products["products_id"]) . '">'.tep_image_button('small_view.gif').'</a>&nbsp;&nbsp;' .$przcisk_kup. '</td>
+           </tr>
+          </table>
+         </td>
+        </tr>
+       </table>
+      </td>
+     </tr>
+    </table>
+</td>';
+
+    $col ++;
+    if ($col > $ilosc_col) {
+		$span= 0;
+        $col = 1;
+        $row ++;
+		    $span = ($ilosc_col * 2) - 1;
+        if ($row < $max_wiersz) {
+          echo '
+          </tr>
+          <tr>
+           <td colspan="'.$span.'" width="100%" height="5"></td>
+          </tr>
+          <tr>';
+        } else {
+          echo '
+          '
+          ;
+        }
+	  } else {
+		echo '
+        <td width="3" height="100%">'.tep_draw_separator('pixel_trans.gif', '3', '1').'</td>';
+    }
+}
+
+?>

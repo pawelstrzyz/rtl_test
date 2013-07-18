@@ -1,0 +1,39 @@
+/*
+  devosc, developing open source code
+  http://www.devosc.com
+
+  Copyright (c) 2005 devosc
+
+  Released under the GNU General Public License
+*/
+/* jcssMenu */
+#jcssMenu { width: 12em; }
+.jcssMenu ul { z-index: 100; padding: 0; margin: 0; border: 0; list-style: none; }
+.jcssMenu ul li { z-index: 100; width: 100%; float: left; position: relative; display: block; clear: both; height: auto; }
+.jcssMenu ul li ul { border: 1px solid #bfbfd1; position: absolute; top: 0; left: 101%; visibility: hidden; }
+.jcssMenu ul>li>ul { border: 0; }
+.jcssMenu ul li ul li { background: #F8F8FF url('./images/mbar.gif') repeat-y; }
+.jcssMenu ul>li>ul>li { min-width: 11.5em; width: auto; }
+.jcssMenu ul>li>ul>li { border: 0; border-color: #bfbfd1; border-style: solid; border-right-width: 1px; border-left-width: 1px; }
+.jcssMenu ul>li>ul>li:first-child { border-top-width: 1px; }
+.jcssMenu ul>li>ul>li:last-child { border-bottom-width: 1px; }
+
+/* pseudo support */
+.jcssMenu ul li:hover ul { visibility: visible; }
+.jcssMenu ul li:hover ul ul { visibility: hidden; }
+.jcssMenu ul ul li:hover ul { visibility: visible; }
+.jcssMenu ul ul li:hover ul ul { visibility: hidden; }
+.jcssMenu ul ul ul li:hover ul { visibility: visible; }
+.jcssMenu ul ul ul li:hover ul ul { visibility: hidden; }
+.jcssMenu ul ul ul ul li:hover ul { visibility: visible; }
+.jcssMenu ul ul ul ul li:hover ul ul { visibility: hidden; }
+.jcssMenu ul ul ul ul ul li:hover ul { visibility: visible; }
+.jcssMenu ul ul ul ul ul li:hover ul ul { visibility: hidden; }
+
+.jcssMenu a { color: #53537d; min-width: 11.5em; width: auto; margin: 0; padding: 2px; white-space: nowrap; height: auto; position: relative; display: block; }
+.jcssMenu a.hover, .jcssMenu a:hover { color: #53537d; background: #f6f8fe; text-decoration: none; padding: 1px; border:1px solid #bfbfd1; }
+.jcssMenu li:hover>a { color: white; background: #474747; text-decoration: none; padding: 1px; border:1px solid #bfbfd1; }
+.jcssMenu .icon {  background: url('./images/icons/folder.gif') no-repeat 1px 50%; display: block; }
+.jcssMenu .submenu {  background: url('./images/arrow.gif') no-repeat 98% 50%; min-width: 11.5em; width: 100%; display: block; }
+.jcssMenu .text { text-indent: 18px; padding: 1px 10px 1px 0px; display: block; }
+.jcssMenu .selected { font-weight: none; }
